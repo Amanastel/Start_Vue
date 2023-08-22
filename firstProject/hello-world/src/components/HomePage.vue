@@ -6,6 +6,8 @@
     <p>Count: {{ count }}</p>
     <button @click="increment">Increment</button>
     <button @click="decrement">Decrement</button>
+    <br>
+    <button v-on:click="hello(1123)">click hear</button>
   </div>
 </template>
 
@@ -28,7 +30,15 @@ export default {
       if (this.count > 0) {
         this.count--;
       }
-    }
+    },
+
+    hello(e){
+      console.log('hello')
+      alert(e)
+    },
+
+    
+
   }
   
 }
