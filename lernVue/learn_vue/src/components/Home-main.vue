@@ -1,5 +1,13 @@
 <template>
   <div>
+      <h1 class="homeStyle">class and style bindings</h1>
+      <h1 v-bind:style="{color:'blue'}">class and style bindings</h1>
+      <h1 v-bind:class="{display:show}" >class bindings with object</h1>
+      <h1 v-bind:class="[aClass]" >class bindings with Arryas</h1>
+
+      
+
+
     <p v-html="rowhtml"></p>
     <div class="home">
       <div class="flx">
@@ -32,6 +40,8 @@ export default {
       ok:true,
       rowhtml:'<h1>home components</h1>',
       disbalebtn:false,
+      show:true,
+      aClass: 'arraysClass'
 
     };
   },
@@ -56,5 +66,17 @@ export default {
 }
 .flx{
     display: flex;
+}
+
+.homeStyle{
+    color: orange;
+}
+
+.display{
+    background-color: burlywood;
+}
+
+.arraysClass{
+    background-color: cyan;
 }
 </style>

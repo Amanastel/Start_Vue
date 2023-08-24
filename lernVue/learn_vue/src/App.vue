@@ -3,8 +3,11 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <!-- <Homes msg="hello world"/> -->
+    <Databind/>
     <loveme msg="hello world"/>
+    
     <HomeMain/>
+   
   </div>
 </template>
 
@@ -13,6 +16,7 @@
 // import Homes from './components/HomePage.vue'
 // import loveme from './components/Love-me.vue'
 import HomeMain from './components/Home-main.vue'
+import Databind from './components/Databind.vue'
 
 
 export default {
@@ -22,6 +26,7 @@ export default {
     // Homes,
     // loveme,
     HomeMain,
+    Databind,
   }
 }
 </script>
